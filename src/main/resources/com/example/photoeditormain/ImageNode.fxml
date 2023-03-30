@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+
+<fx:root fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.8" prefHeight="340.0" prefWidth="230.0" style="-fx-background-color: #000; -fx-background-radius: 15px; -fx-border-radius: 15px;" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="162.0" fitWidth="215.0" layoutX="7.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" visible="false" y="70.0" />
+        <GridPane prefHeight="150.0" prefWidth="200.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="166.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="35.0" minWidth="0.0" prefWidth="32.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Label fx:id="titleBar" layoutX="67.0" layoutY="29.0" text="Image" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="outputLinkHandle" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="25.0" styleClass="outputLinkHandle" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <Circle fill="#6e6e6f" layoutX="13.0" layoutY="38.0" radius="14.0" stroke="#616161" strokeType="INSIDE" />
+                </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                      <Button fx:id="deleteButton" layoutX="-2.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #3CB371;" text="X" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                      <Button fx:id="openButton" layoutX="63.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: #3CB371;" text="Add" />
+               </children>
+            </AnchorPane>
+            </children>
+        </GridPane>
+    </children>
+</fx:root>
